@@ -1,19 +1,19 @@
 ---
-layout: "opentelekomcloud"
-page_title: "OpenTelekomCloud: opentelekomcloud_networking_network_v2"
-sidebar_current: "docs-opentelekomcloud-datasource-networking-network-v2"
+layout: "telefonicaopencloud"
+page_title: "TelefonicaOpenCloud: telefonicaopencloud_networking_network_v2"
+sidebar_current: "docs-telefonicaopencloud-datasource-networking-network-v2"
 description: |-
-  Get information on an OpenTelekomCloud Network.
+  Get information on an TelefonicaOpenCloud Network.
 ---
 
-# opentelekomcloud\_networking\_network\_v2
+# telefonicaopencloud\_networking\_network\_v2
 
-Use this data source to get the ID of an available OpenTelekomCloud network.
+Use this data source to get the ID of an available TelefonicaOpenCloud network.
 
 ## Example Usage
 
 ```hcl
-data "opentelekomcloud_networking_network_v2" "network" {
+data "telefonicaopencloud_networking_network_v2" "network" {
   name = "tf_test_network"
 }
 ```

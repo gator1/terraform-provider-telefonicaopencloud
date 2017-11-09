@@ -1,19 +1,19 @@
 ---
-layout: "opentelekomcloud"
-page_title: "OpenTelekomCloud: opentelekomcloud_images_image_v2"
-sidebar_current: "docs-opentelekomcloud-datasource-images-image-v2"
+layout: "telefonicaopencloud"
+page_title: "TelefonicaOpenCloud: telefonicaopencloud_images_image_v2"
+sidebar_current: "docs-telefonicaopencloud-datasource-images-image-v2"
 description: |-
-  Get information on an OpenTelekomCloud Image.
+  Get information on an TelefonicaOpenCloud Image.
 ---
 
-# opentelekomcloud\_images\_image\_v2
+# telefonicaopencloud\_images\_image\_v2
 
-Use this data source to get the ID of an available OpenTelekomCloud image.
+Use this data source to get the ID of an available TelefonicaOpenCloud image.
 
 ## Example Usage
 
 ```hcl
-data "opentelekomcloud_images_image_v2" "ubuntu" {
+data "telefonicaopencloud_images_image_v2" "ubuntu" {
   name = "Ubuntu 16.04"
   most_recent = true
 }

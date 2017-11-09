@@ -1,19 +1,19 @@
 ---
-layout: "opentelekomcloud"
-page_title: "OpenTelekomCloud: opentelekomcloud_networking_router_v2"
-sidebar_current: "docs-opentelekomcloud-resource-networking-router-v2"
+layout: "telefonicaopencloud"
+page_title: "TelefonicaOpenCloud: telefonicaopencloud_networking_router_v2"
+sidebar_current: "docs-telefonicaopencloud-resource-networking-router-v2"
 description: |-
-  Manages a V2 router resource within OpenTelekomCloud.
+  Manages a V2 router resource within TelefonicaOpenCloud.
 ---
 
-# opentelekomcloud\_networking\_router_v2
+# telefonicaopencloud\_networking\_router_v2
 
-Manages a V2 router resource within OpenTelekomCloud.
+Manages a V2 router resource within TelefonicaOpenCloud.
 
 ## Example Usage
 
 ```hcl
-resource "opentelekomcloud_networking_router_v2" "router_1" {
+resource "telefonicaopencloud_networking_router_v2" "router_1" {
   name             = "my_router"
   external_gateway = "f67f0d72-0ddf-11e4-9d95-e1f29f417e2f"
 }

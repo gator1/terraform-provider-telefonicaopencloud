@@ -1,27 +1,27 @@
 ---
-layout: "opentelekomcloud"
-page_title: "OpenTelekomCloud: opentelekomcloud_identity_user_v3"
-sidebar_current: "docs-opentelekomcloud-resource-identity-user-v3"
+layout: "telefonicaopencloud"
+page_title: "TelefonicaOpenCloud: telefonicaopencloud_identity_user_v3"
+sidebar_current: "docs-telefonicaopencloud-resource-identity-user-v3"
 description: |-
-  Manages a V3 User resource within OpenTelekomCloud Keystone.
+  Manages a V3 User resource within TelefonicaOpenCloud Keystone.
 ---
 
-# opentelekomcloud\_identity\_user_v3
+# telefonicaopencloud\_identity\_user_v3
 
-Manages a V3 User resource within OpenTelekomCloud Keystone.
+Manages a V3 User resource within TelefonicaOpenCloud Keystone.
 
-Note: You _must_ have admin privileges in your OpenTelekomCloud cloud to use
+Note: You _must_ have admin privileges in your TelefonicaOpenCloud cloud to use
 this resource.
 
 ## Example Usage
 
 ```hcl
-resource "opentelekomcloud_identity_project_v3" "project_1" {
+resource "telefonicaopencloud_identity_project_v3" "project_1" {
   name = "project_1"
 }
 
-resource "opentelekomcloud_identity_user_v3" "user_1" {
-  default_project_id = "${opentelekomcloud_identity_project_v3.project_1.id}"
+resource "telefonicaopencloud_identity_user_v3" "user_1" {
+  default_project_id = "${telefonicaopencloud_identity_project_v3.project_1.id}"
   name = "user_1"
   description = "A user"
 
@@ -101,5 +101,5 @@ The following attributes are exported:
 Users can be imported using the `id`, e.g.
 
 ```
-$ terraform import opentelekomcloud_identity_user_v3.user_1 89c60255-9bd6-460c-822a-e2b959ede9d2
+$ terraform import telefonicaopencloud_identity_user_v3.user_1 89c60255-9bd6-460c-822a-e2b959ede9d2
 ```

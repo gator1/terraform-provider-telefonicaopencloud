@@ -1,26 +1,26 @@
 ---
-layout: "opentelekomcloud"
-page_title: "OpenTelekomCloud: opentelekomcloud_networking_port_v2"
-sidebar_current: "docs-opentelekomcloud-resource-networking-port-v2"
+layout: "telefonicaopencloud"
+page_title: "TelefonicaOpenCloud: telefonicaopencloud_networking_port_v2"
+sidebar_current: "docs-telefonicaopencloud-resource-networking-port-v2"
 description: |-
-  Manages a V2 port resource within OpenTelekomCloud.
+  Manages a V2 port resource within TelefonicaOpenCloud.
 ---
 
-# opentelekomcloud\_networking\_port_v2
+# telefonicaopencloud\_networking\_port_v2
 
-Manages a V2 port resource within OpenTelekomCloud.
+Manages a V2 port resource within TelefonicaOpenCloud.
 
 ## Example Usage
 
 ```hcl
-resource "opentelekomcloud_networking_network_v2" "network_1" {
+resource "telefonicaopencloud_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "opentelekomcloud_networking_port_v2" "port_1" {
+resource "telefonicaopencloud_networking_port_v2" "port_1" {
   name           = "port_1"
-  network_id     = "${opentelekomcloud_networking_network_v2.network_1.id}"
+  network_id     = "${telefonicaopencloud_networking_network_v2.network_1.id}"
   admin_state_up = "true"
 }
 ```
@@ -104,7 +104,7 @@ The following attributes are exported:
 Ports can be imported using the `id`, e.g.
 
 ```
-$ terraform import opentelekomcloud_networking_port_v2.port_1 eae26a3e-1c33-4cc1-9c31-0cd729c438a1
+$ terraform import telefonicaopencloud_networking_port_v2.port_1 eae26a3e-1c33-4cc1-9c31-0cd729c438a1
 ```
 
 ## Notes
@@ -112,5 +112,5 @@ $ terraform import opentelekomcloud_networking_port_v2.port_1 eae26a3e-1c33-4cc1
 ### Ports and Instances
 
 There are some notes to consider when connecting Instances to networks using
-Ports. Please see the `opentelekomcloud_compute_instance_v2` documentation for further
+Ports. Please see the `telefonicaopencloud_compute_instance_v2` documentation for further
 documentation.

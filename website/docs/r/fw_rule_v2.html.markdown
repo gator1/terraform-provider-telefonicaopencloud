@@ -1,19 +1,19 @@
 ---
-layout: "opentelekomcloud"
-page_title: "OpenTelekomCloud: opentelekomcloud_fw_rule_v2"
-sidebar_current: "docs-opentelekomcloud-resource-fw-rule-v1"
+layout: "telefonicaopencloud"
+page_title: "TelefonicaOpenCloud: telefonicaopencloud_fw_rule_v2"
+sidebar_current: "docs-telefonicaopencloud-resource-fw-rule-v1"
 description: |-
-  Manages a v1 firewall group rule resource within OpenTelekomCloud.
+  Manages a v1 firewall group rule resource within TelefonicaOpenCloud.
 ---
 
-# opentelekomcloud\_fw\_rule_v2
+# telefonicaopencloud\_fw\_rule_v2
 
-Manages a v2 firewall rule resource within OpenTelekomCloud.
+Manages a v2 firewall rule resource within TelefonicaOpenCloud.
 
 ## Example Usage
 
 ```hcl
-resource "opentelekomcloud_fw_rule_v2" "rule_1" {
+resource "telefonicaopencloud_fw_rule_v2" "rule_1" {
   name             = "my_rule"
   description      = "drop TELNET traffic"
   action           = "deny"
@@ -97,5 +97,5 @@ The following attributes are exported:
 Firewall Rules can be imported using the `id`, e.g.
 
 ```
-$ terraform import opentelekomcloud_fw_rule_v2.rule_1 8dbc0c28-e49c-463f-b712-5c5d1bbac327
+$ terraform import telefonicaopencloud_fw_rule_v2.rule_1 8dbc0c28-e49c-463f-b712-5c5d1bbac327
 ```

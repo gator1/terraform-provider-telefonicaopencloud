@@ -1,19 +1,19 @@
 ---
-layout: "opentelekomcloud"
-page_title: "OpenTelekomCloud: opentelekomcloud_lb_vip_v1"
-sidebar_current: "docs-opentelekomcloud-resource-lb-vip-v1"
+layout: "telefonicaopencloud"
+page_title: "TelefonicaOpenCloud: telefonicaopencloud_lb_vip_v1"
+sidebar_current: "docs-telefonicaopencloud-resource-lb-vip-v1"
 description: |-
-  Manages a V1 load balancer vip resource within OpenTelekomCloud.
+  Manages a V1 load balancer vip resource within TelefonicaOpenCloud.
 ---
 
-# opentelekomcloud\_lb\_vip_v1
+# telefonicaopencloud\_lb\_vip_v1
 
-Manages a V1 load balancer vip resource within OpenTelekomCloud.
+Manages a V1 load balancer vip resource within TelefonicaOpenCloud.
 
 ## Example Usage
 
 ```hcl
-resource "opentelekomcloud_lb_vip_v1" "vip_1" {
+resource "telefonicaopencloud_lb_vip_v1" "vip_1" {
   name      = "tf_test_lb_vip"
   subnet_id = "12345"
   protocol  = "HTTP"
@@ -104,5 +104,5 @@ The following attributes are exported:
 Load Balancer VIPs can be imported using the `id`, e.g.
 
 ```
-$ terraform import opentelekomcloud_lb_vip_v1.vip_1 50e16b26-89c1-475e-a492-76167182511e
+$ terraform import telefonicaopencloud_lb_vip_v1.vip_1 50e16b26-89c1-475e-a492-76167182511e
 ```
